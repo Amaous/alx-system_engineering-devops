@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -ap | sed ':a;N;$!ba;s/\n/,g' 
+ls -ap1 | grep -E '^\.?[^/]*$' | sort -d -f | tr '\n' ',' | sed 's/,$/\n/'
+
