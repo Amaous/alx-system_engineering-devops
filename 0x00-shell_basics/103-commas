@@ -1,3 +1,2 @@
 #!/bin/bash
-ls -ap1 | grep -E '^\.?[^/]*$' | sort -d -f | tr '\n' ',' | sed 's/,$/\n/'
-
+ls -xamp
